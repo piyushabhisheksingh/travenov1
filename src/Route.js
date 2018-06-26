@@ -20,7 +20,7 @@ class TabIcon extends Component {
         return (
                 <Icon
                     name={this.props.title}
-                    color={this.props.focused ? '#00a1ad4D' : '#00a1ad'}
+                    color={this.props.focused ? '#00a1ad' : '#00a1ad4D'}
                     size={30}
                 />
         )
