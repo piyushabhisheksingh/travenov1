@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   	marginVertical: 15,
   	fontSize:18,
     color:'#00a1ad',
-    fontFamily: "Helvetica"
+    fontFamily: "Helvetica",
+    fontStyle:'italic'
   }
 });
