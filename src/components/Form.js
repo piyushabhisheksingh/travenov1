@@ -3,7 +3,6 @@ import utf8 from 'utf8'
 import base64 from 'base-64'
 import {
   StyleSheet,
-  Alert,
   AsyncStorage,
   Text,
   View,
@@ -58,16 +57,7 @@ constructor(){
       alert('Please fill the form fields');
     }
     else{
-      if (this.props.type == "Login"){
 
-        alert('Login ' + 'email: ' + username+ ' password: ' + password);
-
-    }
-    else{
-
-      alert('Signup ' + 'email: ' + username + ' password: ' + password);
-
-    }
     var url='https://google.com';
 
   fetch(url, {
