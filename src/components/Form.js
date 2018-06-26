@@ -4,6 +4,7 @@ import base64 from 'base-64'
 import {
   StyleSheet,
   AsyncStorage,
+  Alert,
   Text,
   View,
   TextInput,
@@ -20,6 +21,7 @@ constructor(){
   state = {
   username: '',
   password: '',
+  error: 'Welcome'
 }
 
 	render(){
@@ -29,7 +31,7 @@ constructor(){
 
           <TextInput style={styles.inputBox}
               underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Email, Phone number or Username"
+              placeholder="Email, Mobile number or Username"
               placeholderTextColor = "#777777"
               keyboardType="email-address"
               selectionColor='#00a1ad'
@@ -48,6 +50,7 @@ constructor(){
            <TouchableOpacity onPress={this._submitForm} style={styles.button}>
              <Text style={styles.buttonText}>{this.props.type}</Text>
            </TouchableOpacity>
+           <Text style={styles.errorText}>{this.state.error}</Text>
   		</View>
 			)
 	}
@@ -73,7 +76,6 @@ constructor(){
   }),
 });
 
-    Actions.pop()
     Actions.tabbar();
 
     }
@@ -115,6 +117,13 @@ const styles = StyleSheet.create({
     fontFamily: "Helvetica",
     color:'#ffffff',
     textAlign:'center'
+  },
+  errorText: {
+    fontSize:16,
+    fontWeight:'500',
+    fontFamily: "Helvetica",
+    color:'#cc0000',
+    textAlign:'center',
+    marginVertical: 15
   }
-
 });
