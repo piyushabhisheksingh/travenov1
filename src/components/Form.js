@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import utf8 from 'utf8'
-import base64 from 'base-64'
+import utf8 from 'utf8';
+import base64 from 'base-64';
 import {
   StyleSheet,
   AsyncStorage,
