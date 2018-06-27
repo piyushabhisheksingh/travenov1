@@ -12,7 +12,6 @@ import {
   StyleSheet
 } from 'react-native';
 import Route from './src/Route';
-import Orientation from 'react-native-orientation-locker';
 import NavigationBar from 'react-native-navbar-color';
 
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated']);
